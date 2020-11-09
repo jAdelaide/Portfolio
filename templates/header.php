@@ -3,7 +3,8 @@
 <head>
     <title>Jordan Adelaide</title>
     <!-- Compiled and minified CSS from materializecss.com - from tutorial -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="materialize.min.css">
 
 <!-- Making some of the styles that are included below -->
 <style type="text/css">
