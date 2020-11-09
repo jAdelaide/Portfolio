@@ -27,7 +27,7 @@
 <?php require('languages.php'); ?>
 
 
-<h1 style="color: rgb(212, 32, 152)">Languages</h1>
+<h1 style="color: rgb(212, 32, 152); text-indent: 30px">Languages</h1>
 
 <div class="container">
   <div class="row">
@@ -42,8 +42,9 @@
               </a>
             </div>
             <div class="card-action center">
-                <a class="brand-text" href="details.php?id=<?php echo $language['name'] ?>">More info</a>
-                <a class="brand-text" href="<?php echo $language['name'] . '_projects.php'; ?>">My projects</a>
+                <!-- <a href="details.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500">More info</a> -->
+                <a href="projects.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500">My projects</a>
+                <!-- <a href="<?php echo $language['name'] . '_projects.php'; ?>" style="color:rgb(224, 180, 0); font-weight: 500">My projects</a> -->
             </div>
           </div>
         </div>

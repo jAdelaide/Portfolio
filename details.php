@@ -8,7 +8,7 @@
 <html>
 
     <?php require 'templates/header.php'; ?>
-    <?php require 'languages.php'; ?>
+    <?php include ''; ?>
 
     <?php
 
