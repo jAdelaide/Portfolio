@@ -1,16 +1,16 @@
 <?php
 
                 // connect to database
-    $conn = mysqli_connect('localhost', 'jordan', 'test1234', 'portfolio');
+    // $conn = mysqli_connect('');
 
-    //             // check connection
-    if($conn):                                     // if connection is negative then:
-        echo 'Connected to MYSQLi';
-    //  else:
-    //     echo 'Connection error: ' . mysqli_connect_error(); 
-     endif;
-                // close the connection to the database
-    mysqli_close($conn);
+    // //             // check connection
+    // if($conn):                                     // if connection is negative then:
+    //     echo 'Connected to MYSQLi';
+    // //  else:
+    // //     echo 'Connection error: ' . mysqli_connect_error(); 
+    //  endif;
+    //             // close the connection to the database
+    // mysqli_close($conn);
 
 
 

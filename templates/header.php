@@ -27,7 +27,7 @@
 <body class="grey darken-4" style="color: rgb(250, 250, 250)">
     <nav class="grey">
         <div class="container">
-            <a href="/portfolio" class="brand-logo brand-text" style="font-weight: 900">Home</a>
+            <a href="/portfolio" class="brand-logo brand-text" style="font-weight: 900">Jordan Adelaide</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
                 <li><a href="http://localhost/portfolio/form.php" class="btn brand">Form</a></li>
                 <li><a href="https://jadelaide.github.io/-JaBlog-/" class="btn brand">¡JaBlog!</a></li>
