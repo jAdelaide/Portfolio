@@ -9,7 +9,7 @@
     // //  else:
     // //     echo 'Connection error: ' . mysqli_connect_error(); 
     //  endif;
-    //             // close the connection to the database
+    //             // close the connection to the database 
     // mysqli_close($conn);
 
 
