@@ -12,22 +12,19 @@
     //             // close the connection to the database
     // mysqli_close($conn);
 
-
-
-// $languages = [
-//     ['name' => 'Python', 'website' => 'https://www.python.org/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png'], // with text: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/486px-Python_logo_and_wordmark.svg.png'],
-//     ['name' => 'Ruby', 'website' => 'https://www.ruby-lang.org/en/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png'],
-//     ['name' => 'HTML', 'website' => 'https://html.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/d/de/HTML5_oval_logo.png'],
-//     ['name' => 'CSS', 'website' => 'https://sass-lang.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png'],
-//     ['name' => 'PHP', 'website' => 'https://www.php.net/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/350px-Webysther_20160423_-_Elephpant.svg.png']
-// ];
 ?>
 
 <?php require('templates/header.php'); ?>
 <?php require('languages.php'); ?>
 
 
-<h1 style="color: rgb(212, 32, 152); text-indent: 30px">Languages</h1>
+<ul id="nav-mobile" class="right">
+  <li><a href="cv.php" class="btn brand" alt="" title="">CV</a></li>
+  <li><a href="personalStatement.php" class="btn brand" alt="" title="">Personal statement</a></li>
+</ul>
+
+<h1 style="color: rgb(212, 32, 152); text-indent: 50px">Languages</h1>
+<hr align="left" width="1000px" color=" rgb(0, 0, 0,)">
 
 <div class="container">
   <div class="row">
@@ -37,8 +34,8 @@
         <div class="col">
           <div class="card">
             <div class="card-content center">
-              <a href="<?php echo $language['website']; ?>">
-                <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name']; ?>" height="80" width="auto">
+              <a href="<?php echo $language['website']; ?>" target="_blank">
+                <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name'] . ' - Open in new tab'; ?>" height="80" width="auto">
               </a>
             </div>
             <div class="card-action center">
@@ -53,6 +50,7 @@
 
   </div>
 </div>
+
 
 
 <?php require('templates/footer.php'); ?>

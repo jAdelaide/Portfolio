@@ -4,11 +4,8 @@
 
 ?>
 
-<!DOCTYPE html>
-<html>
-
-    <?php require 'templates/header.php'; ?>
-    <?php include ''; ?>
+<?php require 'templates/header.php'; ?>
+<?php include ''; ?>
 
     <?php
 
