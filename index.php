@@ -19,8 +19,9 @@
 
 
 <ul id="nav-mobile" class="right">
-  <li><a href="cv.php" class="btn brand" alt="" title="">CV</a></li>
-  <li><a href="personalStatement.php" class="btn brand" alt="" title="">Personal statement</a></li>
+  <li><a href="cv.php" class="btn brand" alt="Button for CV" title="Open my CV in a new tab">CV</a></li>
+  <hr align="right" width="200px" color=" #112a5f">
+  <li><a href="personalStatement.php" class="btn brand" alt="Button for personal statement" title="See my personal statement">Personal statement</a></li>
 </ul>
 
 <h1 style="color: rgb(212, 32, 152); text-indent: 50px">Languages</h1>
