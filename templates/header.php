@@ -25,11 +25,14 @@
 
 </head>
 
+<?php $uName = $_COOKIE['uName'] ?? 'guest'; ?>
+
 <body class="grey darken-4" style="color: rgb(250, 250, 250)">
     <nav class="grey">
         <div class="container">
             <a href="/portfolio" class="brand-logo brand-text" style="font-weight: 900" title="Home page">Jordan Adelaide</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
+                <li style="font-weight: 500">Hello <?php echo htmlspecialchars($uName); ?></li>
                 <li><a href="form.php" class="btn brand" alt="Button for form" title="See my example form">Form</a></li>
                 <li><a href="https://jadelaide.github.io/-JaBlog-/" class="btn brand" target="_blank" alt="Button for blog" title="Open blog in new tab">¡JaBlog!</a></li>
             </ul>

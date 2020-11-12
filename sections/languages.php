@@ -13,7 +13,6 @@
           <div class="card">
             <div class="card-content center">
               <a href="<?php echo $language['website']; ?>" target="_blank">
-                <!-- <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name'] . ' - Open in new tab'; ?>" height="80" width="auto"> -->
                 <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name'] . ' - Open in new tab'; ?>" height="80" width="auto">
               </a>
             </div>

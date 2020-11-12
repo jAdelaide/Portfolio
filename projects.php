@@ -1,14 +1,8 @@
-<?php
-
-
-
-?>
-
 <!DOCTYPE html>
 <html>
 
     <?php require 'templates/header.php'; ?>
-    <?php require 'languages.php'; ?>
+    <?php require 'languagesArray.php'; ?>
 
     <?php
 
