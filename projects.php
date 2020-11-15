@@ -10,7 +10,7 @@
     foreach($languages as $language):
         if($language['name'] == $_GET['id']): ?>
             <h4 style="color: rgb(255, 177, 109); text-indent: 50px"><?php echo htmlspecialchars($_GET['id']); ?></h4>
-            <?php $projectPage = "projectPages/" . $_GET['id'] . ".php";
+            <?php $projectPage = "sections/projectPages/" . $_GET['id'] . ".php";
             include $projectPage;
             $pageExists = TRUE;
         endif;

@@ -10,7 +10,7 @@
 <br>
 <li style="text-indent: 90px; font-size: 17px; font-family: candara; color: rgb(210, 190, 170)">        </li> -->
 
-<div class="grid-container" style="display: grid; grid-template-columns: 70% 30%; grid-gap: auto; margin: 15px; padding: 0px; border-radius: 10px; background-color: rgba(200, 200, 200, 0.06)">
+<div class="grid-container" style="display: grid; grid-template-columns: 70% 30%; grid-gap: auto; margin-left: 25px; margin-right: 50px; padding: 0px; border-radius: 25px; background-color: rgba(200, 200, 200, 0.06)">
     <div>
         <h4 align="left" style="text-indent: 50px; color: rgba(157, 95, 255, 0.8)">AWS Cloud Practitioner Certification</a></h4>
         <h6 style="float: right; text-indent: 500px; direction: rtl; color: rgba(244, 212, 124, 0.8)">2020</h6>
@@ -31,9 +31,7 @@
     </div>
 </div>
 
-<!-- <a href="https://www.youracclaim.com/badges/80f36333-a475-4a1e-8870-2330169cbc37/public_url"> -->
-
-<div class="grid-container" style="display: grid; grid-template-columns: 70% 30%; grid-gap: auto; margin: 15px; padding: 0px; border-radius: 10px; background-color: rgba(200, 200, 200, 0.06)">
+<div class="grid-container" style="display: grid; grid-template-columns: 70% 30%; grid-gap: auto; margin-left: 25px; margin-right: 50px; padding: 0px; border-radius: 25px; background-color: rgba(200, 200, 200, 0.06)">
     <div>
         <h4 align="left" style="text-indent: 50px; color: rgba(157, 95, 255, 0.8)">Mechanical Engineering BEng, 2:2</h4>
         <h6 style="float: right; text-indent: 500px; direction: rtl; color: rgba(244, 212, 124, 0.8)">2015 - 2019</h6>

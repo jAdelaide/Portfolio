@@ -16,11 +16,13 @@
                 <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name'] . ' - Open in new tab'; ?>" height="80" width="auto">
               </a>
             </div>
+            
+            <?php $projectPage = "sections/projectPages/" . $language['name'] . ".php";
+            if(file_exists($projectPage)): ?>
             <div class="card-action center">
-                <!-- <a href="details.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500">More info</a> -->
                 <a href="projects.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500">My projects</a>
-                <!-- <a href="<?php echo $language['name'] . '_projects.php'; ?>" style="color:rgb(224, 180, 0); font-weight: 500">My projects</a> -->
             </div>
+            <?php endif; ?>
           </div>
         </div>
 
