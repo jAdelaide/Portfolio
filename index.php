@@ -1,18 +1,3 @@
-<?php
-
-                // connect to database
-    // $conn = mysqli_connect('');
-
-    // //             // check connection
-    // if($conn):                                     // if connection is negative then:
-    //     echo 'Connected to MYSQLi';
-    // //  else:
-    // //     echo 'Connection error: ' . mysqli_connect_error(); 
-    //  endif;
-    //             // close the connection to the database
-    // mysqli_close($conn);
-?>
-
 <?php require('templates/header.php'); ?>
 <?php require('languagesArray.php'); ?>
 
