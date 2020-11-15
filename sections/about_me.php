@@ -19,8 +19,8 @@
     </div>
     <p>
     I have a huge range of interests and love to learn and try new things. No matter if I'm doing front-end programming; writing a script to 
-    automate a process; making or designing a physical or CAD product; painting a picture or anything else, I am motivated and enjoy producing 
-    things that I would enjoy as a user. 
+    automate a process; making or designing a physical or CAD product; painting a picture or anything else, I am motivated by and enjoy producing
+     things that I would enjoy as a user. 
     </p>
 </div>
 
