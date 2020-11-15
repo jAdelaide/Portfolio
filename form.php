@@ -41,6 +41,11 @@
                         header('Location: index.php');                          // return to the homepage if there are no errors
                     endif;
     endif;                                                                      // end of POST check
+
+    if(isset($_POST['submit'])):                                                // saves user name as a cookie
+        setcookie('uName', $_POST['name'], time() + 60);
+    endif;
+
 ?>
 
 <!DOCTYPE html>
@@ -69,6 +74,7 @@
                 <input type="Submit" name="submit" value="submit" class="btn brand z-depth-10">
             </div>
         </form>
+        <p style="text-align: center; color: rgb(220, 166, 183); font-weight: 500">Submitting will set your name for 1 minute</p>
         <p style="text-align: center; color: rgb(139, 156, 173)">You will be returned to the homepage if there are no errors and the form is submitted</p>
     </section>
 
