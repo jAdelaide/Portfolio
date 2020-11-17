@@ -4,12 +4,6 @@
 <h1 style="color: rgb(212, 32, 152); text-indent: 50px">Qualifications</h1>
 <hr align="left" width="1000px" color="rgb(0, 0, 0,)">
 
-<!-- <h4 align="left" style="text-indent: 50px; color: rgba(157, 95, 255, 0.8)">        </h4>
-<h6 style="float: right; text-indent: 500px; direction: rtl; color: rgba(244, 212, 124, 0.8)">      </h6>
-<hr style="width: 600px; text-align: left; margin-left: 260px" color="rgb(0, 0, 0)">
-<br>
-<li style="text-indent: 90px; font-size: 17px; font-family: candara; color: rgb(210, 190, 170)">        </li> -->
-
 <div class="grid-container" style="display: grid; grid-template-columns: 70% 30%; grid-gap: auto; margin-left: 25px; margin-right: 50px; padding: 0px; border-radius: 25px; background-color: rgba(200, 200, 200, 0.06)">
     <div>
         <h4 align="left" style="text-indent: 50px; color: rgba(157, 95, 255, 0.8)">AWS Cloud Practitioner Certification</a></h4>
