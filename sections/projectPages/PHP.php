@@ -4,7 +4,7 @@
         <form>
             <p style="color: rgba(215, 200, 165, 0.7); text-align: right">
                 My favourite thing about PHP so far is that you can utilise the back-end capabilities to automate a lot of the page building; 
-                this means that when building a website you can really cut down on the amount of code actually written. <br><br>
+                this means that when making a website you can really cut down on the amount of code actually written. <br><br>
                 Using PHP's 'include' and 'require' commands (depending on how important the file is for the page), you can include anything from an 
                 array to an entire page in your page by saving it as it's own file, and include it as many times as you want. <br><br>
                 For this website, the header and footer are their own php files and so is each section and page of the site.
@@ -28,9 +28,16 @@
         </div>
     </div>
     <div style="background-color: rgb(17, 14, 25); border-radius: 0px 0px 0px 30px">
-        
     </div>
     <div style="background-color: rgba(17, 14, 25, 0.6); border-radius: 0px 0px 30px 0px">
-
+        <form>
+            <p style="color: rgba(215, 200, 165, 0.7); text-align: left">
+                Having a number of small sections rather than one big file also means that it's a lot easier to make edits. 
+                It's a lot easier to find the section of code that needs editing when you can easily navigate to the small file that includes it, 
+                and if it's something that's repeated on multiple pages you only need to write it once and edit it once. <br><br>
+                This is a huge help, especially when making just small changes to something like the header that only takes a second to make the actual change, 
+                but is made a lot longer by having to find and edit it on every page and makes the initial set up of new pages a lot quicker and neater too as it's just a few 'include'/'require' statements to include.
+            </p>
+        </form>
     </div>
 </div>
