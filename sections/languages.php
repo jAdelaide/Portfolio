@@ -20,7 +20,16 @@
             <?php $projectPage = "sections/projectPages/" . $language['name'] . ".php";
             if(file_exists($projectPage)): ?>
             <div class="card-action center">
-                <a href="projects.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500">My projects</a>
+                <a href="projects.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500">My work</a>
+            </div>
+            <?php endif; ?>
+
+            <?php $infoPage = "sections/infoPages/" . $language['name'] . ".php";
+            if(file_exists($infoPage)): ?>
+            <div class="card-action center">
+              <div align="right" style="margin-right: 0px; padding-right: 0px">
+                <a href="info.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500; margin-right: 0px; padding-right: 0px;">Info</a>
+              </div>
             </div>
             <?php endif; ?>
           </div>

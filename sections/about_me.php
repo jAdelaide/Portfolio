@@ -5,28 +5,29 @@
 <hr align="left" width="1000px" color=" rgb(0, 0, 0,)">
 
 <div class="box-container">
-<div style="float: left; z-index: 0; position: relative; margin-left: 30px; margin-right: 250px; margin-top: 10px; margin-bottom: 10px; padding-left: 30px; padding-right: 150px; padding-top: 3px; padding-bottom: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 200px 1000px 1000px 200px; color: rgb(210, 190, 170); font-size: 19px; font-family: candara;">
-    <p style="position: relative; z-index: 0">
-    Hey! I'm Jordan, an enthusiastic and skilled trainee developer that loves to make things.
-    My background is in mechanical engineering and design and I only started coding in 2020, but have quickly gained experience in a number of 
-    areas - including enough PHP, HTML and CSS to build this portfolio website from scratch. 
-    </p>
-    <div style="text-align: center; z-index: 0">
-        <span class="dot" style="height: 25px; width: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
-        <span class="dot" style="height: 25px; width: 25px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
-        <span class="dot" style="height: 25px; width: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
-        <span class="dot" style="height: 25px; width: 25px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
-        <span class="dot" style="height: 25px; width: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
+    <div style="float: left; z-index: 0; position: relative; margin-left: 30px; margin-right: 250px; margin-top: 10px; margin-bottom: 10px; padding-left: 30px; padding-right: 150px; padding-top: 3px; padding-bottom: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 200px 1000px 1000px 200px; color: rgb(210, 190, 170); font-size: 19px; font-family: candara;">
+        <p style="position: relative; z-index: 0">
+        Hey! I'm Jordan, an enthusiastic and skilled trainee developer that loves to make things.
+        My background is in mechanical engineering and design and I only started coding in 2020, but have quickly gained experience in a number of 
+        areas - including enough PHP, HTML and CSS to build this portfolio website from scratch. 
+        </p>
+        <div style="text-align: center; z-index: 0">
+            <span class="dot" style="height: 25px; width: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
+            <span class="dot" style="height: 25px; width: 25px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
+            <span class="dot" style="height: 25px; width: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
+            <span class="dot" style="height: 25px; width: 25px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
+            <span class="dot" style="height: 25px; width: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 50%; display: inline-block"></span>
+        </div>
+        <p style="position: relative; z-index: 0">
+            I have a huge range of interests and love to learn and try new things. No matter if I'm doing front-end programming; writing a script to 
+            automate a process; making or designing a physical or CAD product; painting a picture or anything else, I am motivated by and enjoy producing
+            things that I would enjoy as a user. 
+        </p>
     </div>
-    <p style="position: relative; z-index: 0">
-    I have a huge range of interests and love to learn and try new things. No matter if I'm doing front-end programming; writing a script to 
-    automate a process; making or designing a physical or CAD product; painting a picture or anything else, I am motivated by and enjoy producing
-     things that I would enjoy as a user. 
-    </p>
-</div>
-<div style="z-index: 1; position: absolute">
-    <form style="padding-top: 0px; padding-left: 980px">
-        <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/jordanGlitchBackground.png" height="300px" title="The code for the languages homepage section" alt="A 'foreach' and 'if' nested loop that cycles through each language to include in the section">
-    </form>
-</div>
+
+    <div style="z-index: 1; position: absolute">
+        <form style="padding-top: 0px; padding-left: 980px">
+            <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/jordanGlitchBackground.png" height="300px" title="That's me!!!" alt="A picture of me with a blurred background">
+        </form>
+    </div>
 </div>
