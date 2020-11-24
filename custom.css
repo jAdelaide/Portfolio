@@ -1,0 +1,54 @@
+.expandLeft:hover {
+    position: relative;
+    top: -190px;
+    left: -230px;
+    width: 500px;
+    z-index: 1;
+}
+.expandCenter:hover {
+    position: relative;
+    top: -190px;
+    left: -100px;
+    width: 500px;
+    z-index: 1;
+}
+.expandRight:hover {
+    position: relative;
+    top: -190px;
+    left: 0px;
+    width: 500px;
+    z-index: 1;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 0px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.infoTrigger {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(224, 160, 0);        /* for dots under text */
+}
+.infoText {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 3px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 50%;
+    margin-left: -200px;
+}
+.infoTrigger:hover .infoText{
+    visibility: visible;
+}

@@ -22,7 +22,7 @@
             <form style="padding-top: 85px">
                 <p style="color: rgba(210, 190, 170, 0.7); text-align: left">
                     With PHP you can use 'foreach' and 'if' loops to cycle through values saved in an array (my array is $languages here) so you don't need to include near identical code over and over again. 
-                    <br><br>Code like this also means any new project pages will be included automatically.
+                    <br><br>This code makes the base project page (like this one) for each language. Edit the ID in the URL to see the available pages.
                 </p>
             </form>
         </div>
@@ -47,10 +47,10 @@
         <form>
             <p style="color: rgba(215, 200, 165, 0.7); text-align: left">
                 Having a number of small sections rather than one big file also means that it's a lot easier to make edits. 
-                It's a lot easier to find the section of code that needs editing when you can easily navigate to the small file that includes it, 
+                It's much easier to find the section of code that needs editing when you can easily navigate to the small file that includes it, 
                 and if it's something that's repeated on multiple pages you only need to write it once and edit it once. <br>
                 <br>This is a huge help, especially when making just small changes to something like the header that only takes a second to make the actual change, 
-                but is made a lot longer by having to find and edit it on every page and makes the initial set up of new pages a lot quicker and neater too as it's just a few 'include'/'require' statements to include.
+                but is made a lot longer by having to find and edit it on every page and makes the initial set up of new pages a lot quicker and neater too as it's just a few 'include'/'require' statements for the basic page setup.
             </p>
         </form>
     </div>
