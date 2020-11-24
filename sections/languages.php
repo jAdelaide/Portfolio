@@ -28,9 +28,9 @@
             if(file_exists($infoPage)): ?>
             <div class="card-action center">
               <div align="right" style="margin-right: 0px; padding-right: 0px">
-                <!-- <a href="info.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500; margin-right: 0px; padding-right: 0px;">Info</a> -->
-                <div class="infoDIV">Hover over me.</div>
-                <div class="hide">I am shown when someone hovers over the div above.</div>
+                <div class="infoTrigger" style="color: rgb(224, 160, 0); font-weight: 500">Info
+                  <span class="infoText"><?php include 'infoPages/' . $language['name'] . '.php';?></span>
+                </div>
               </div>
             </div>
             <?php endif; ?>
@@ -40,11 +40,5 @@
         
         <?php endforeach ?>
         
-      </div>
-    </div>
-    <div class="infoTrigger">
-      <p>Hello</p>
-      <div class="beep">
-
       </div>
     </div>
