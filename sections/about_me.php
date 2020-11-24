@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<h1 style="color: rgb(212, 32, 152); text-indent: 50px">About me</h1>
+<h1 style="color: rgb(212, 32, 152); text-indent: 50px; font-family: 'Luckiest Guy', cursive; font-size: 40px">About me</h1>
 <hr align="left" width="1000px" color=" rgb(0, 0, 0,)">
 
 <div class="box-container">
@@ -31,3 +31,4 @@
         </form>
     </div>
 </div>
+<p style="color:rgba(0,0,0,0); line-height: 0px">_</p>

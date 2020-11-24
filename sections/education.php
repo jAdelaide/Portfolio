@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<h1 style="color: rgb(212, 32, 152); text-indent: 50px">Qualifications</h1>
+<h1 style="color: rgb(212, 32, 152); text-indent: 50px; font-family: 'Luckiest Guy', cursive; font-size: 40px">Qualifications</h1>
 <hr align="left" width="1000px" color="rgb(0, 0, 0,)">
 
 <div class="grid-container" style="display: grid; grid-template-columns: 70% 30%; grid-gap: auto; margin-left: 25px; margin-right: 50px; padding: 0px; border-radius: 25px; background-color: rgba(200, 200, 200, 0.06)">
