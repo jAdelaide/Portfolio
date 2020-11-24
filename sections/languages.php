@@ -28,14 +28,23 @@
             if(file_exists($infoPage)): ?>
             <div class="card-action center">
               <div align="right" style="margin-right: 0px; padding-right: 0px">
-                <a href="info.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500; margin-right: 0px; padding-right: 0px;">Info</a>
+                <!-- <a href="info.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-weight: 500; margin-right: 0px; padding-right: 0px;">Info</a> -->
+                <div class="infoDIV">Hover over me.</div>
+                <div class="hide">I am shown when someone hovers over the div above.</div>
               </div>
             </div>
             <?php endif; ?>
+            
           </div>
         </div>
+        
+        <?php endforeach ?>
+        
+      </div>
+    </div>
+    <div class="infoTrigger">
+      <p>Hello</p>
+      <div class="beep">
 
-    <?php endforeach ?>
-
-  </div>
-</div>
+      </div>
+    </div>
