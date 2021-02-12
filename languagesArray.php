@@ -7,6 +7,8 @@ $languages = [
     ['name' => 'HTML', 'website' => 'https://html.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/d/de/HTML5_oval_logo.png'],
     ['name' => 'CSS', 'website' => 'https://sass-lang.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png'],
     ['name' => 'JavaScript', 'website' => 'https://www.javascript.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/7/73/Javascript-736400_960_720.png'],
+    ['name' => 'Google Apps Script', 'website' => 'https://developers.google.com/apps-script', 'logo' => 'https://iconape.com/wp-content/files/np/64149/svg/google-apps-script.svg'],
+];
 ];
 
 ?>
