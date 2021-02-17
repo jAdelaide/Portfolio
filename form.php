@@ -54,7 +54,7 @@
     <?php include 'templates/header.php'; ?>
     
     <section class="container blue-text">
-        <h4 class="center">Example of a form I've made</h4>
+        <h4 class="center" style="rgb(255, 177, 109); font-family: 'Luckiest Guy', cursive; font-size: 40px">Example form</h4>
         <form class="white" action="form.php" method="POST">
             <label style="color: rgb(173, 0, 102); font-weight: bold">Name:</label>
                             <!-- value means what was submitted and saved as $name will be printed -->

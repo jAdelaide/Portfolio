@@ -33,6 +33,7 @@
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted rgb(224, 160, 0);        /* for dots under text */
+    cursor: help;
 }
 .infoText {
     visibility: hidden;
