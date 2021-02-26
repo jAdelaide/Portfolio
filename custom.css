@@ -53,3 +53,10 @@
 .infoTrigger:hover .infoText{
     visibility: visible;
 }
+.selectProject:hover {
+    position: relative;
+    /* top: -190px; */
+    left: -100px;
+    width: 500px;
+    z-index: 1;
+}
