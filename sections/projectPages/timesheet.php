@@ -1,6 +1,19 @@
-<button onclick="selectProject()">Timesheet</button>
+<script>
+    function selectProject() {
+        var x = document.getElementById("timesheet");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        }
+        else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
-<div id="timesheet">
+<button class="projectButton" onclick="selectProject()" style="padding: 17px 22px; font-family: Luckiest Guy; font-size: 22px">
+Timesheet</button>
+
+<div id="timesheet" style="display: none">
     <h4 style="text-align: left; color: rgba(77, 191, 210, 0.85); margin-left: 50px; font-family: candara; font-weight: bold">
     Employee Timesheet</h4>
 
@@ -56,15 +69,3 @@
         
     </div>
 </div>
-
-<script>
-    function selectProject() {
-        var x = document.getElementById("timesheet");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        }
-        else {
-            x.style.display = "none";
-        }
-    }
-</script>
