@@ -53,3 +53,19 @@
 .infoTrigger:hover .infoText{
     visibility: visible;
 }
+.projectButton {
+  color: rgb(3, 57, 66); 
+  background-color: rgba(77, 191, 210, 0.88);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition-duration: 0.6s
+}
+.projectButton:hover {
+  color: rgb(2, 61, 34); 
+  background-color: rgb(8, 207, 115);
+}
