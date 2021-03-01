@@ -35,7 +35,7 @@
 <body class="grey darken-4" style="color: rgb(250, 250, 250)">
     <nav class="grey">
         <div class="container">
-            <a href="https://jordan-adelaide.000webhostapp.com/" style="font-family: 'Emblema One', cursive; color: yellow; text-shadow: 4px 4px 10px rgb(220, 80, 42); font-size: 40px" title="Home page">Jordan Adelaide</a>
+            <a href="http://localhost/Portfolio/" style="font-family: 'Emblema One', cursive; color: yellow; text-shadow: 4px 4px 10px rgb(220, 80, 42); font-size: 40px" title="Home page">Jordan Adelaide</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
                 <li style="font-weight: 500">Hello <?php echo htmlspecialchars($uName); ?></li>
                 <li><a href="form.php" class="btn brand" alt="Button for form" title="See my example form">Form</a></li>
