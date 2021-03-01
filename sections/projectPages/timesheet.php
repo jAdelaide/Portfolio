@@ -1,5 +1,5 @@
 <script>
-    function selectProject() {
+    function timesheet() {
         var x = document.getElementById("timesheet");
         if (x.style.display === "none") {
             x.style.display = "block";
@@ -10,7 +10,7 @@
     }
 </script>
 
-<button class="projectButton" onclick="selectProject()" style="padding: 17px 22px; font-family: Luckiest Guy; font-size: 22px">
+<button class="projectButton" onclick="timesheet()" style="padding: 17px 22px; font-family: Luckiest Guy; font-size: 22px">
 Timesheet</button>
 
 <div id="timesheet" style="display: none">

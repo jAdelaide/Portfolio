@@ -69,3 +69,47 @@
   color: rgb(2, 61, 34); 
   background-color: rgb(8, 207, 115);
 }
+.timesheetButton {
+  color: rgb(3, 57, 66); 
+  background-color: rgba(77, 191, 210, 0.88);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition-duration: 1s
+}
+.timesheetButton:hover {
+  color: rgb(2, 61, 34); 
+  background-color: rgb(8, 207, 115);
+}
+.timesheetButton:focus {
+    color: rgb(2, 61, 34); 
+    background-color: rgb(8, 207, 115);
+  }
+.azureButton {
+    color: rgb(53, 21, 77); 
+    background-color: rgba(157, 60, 221, 0.88);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 20px;
+    cursor: pointer;
+    transition-duration: 1s
+  }
+  .azureButton:hover {
+    color: rgb(55, 13, 56); 
+    background-color: rgb(184, 45, 189);
+  }
+  .azureButton:focus {
+    color: rgb(55, 13, 56); 
+    background-color: rgb(184, 45, 189);
+  }
+  .vhsk:focus {
+    color: rgb(55, 13, 56); 
+    background-color: rgb(88, 192, 218);
+  }
