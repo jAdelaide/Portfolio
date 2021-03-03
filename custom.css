@@ -54,8 +54,6 @@
     visibility: visible;
 }
 .timesheetButton {
-  /* color: rgb(3, 57, 66); 
-  background-color: rgba(77, 191, 210, 0.88); */
   color: rgb(2, 61, 34); 
   background-color: rgb(14, 184, 42);
   border: none;

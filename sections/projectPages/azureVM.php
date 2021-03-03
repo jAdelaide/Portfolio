@@ -38,8 +38,8 @@ Azure VM</button>
         
         <p style="font-size: 18px; font-family: candara; color: rgba(192, 202, 228, 0.85)">
             I did eventually end up getting a laptop from work as we started to use software that required a dedicated graphics card, but due to the credit you get when you join Azure I was able to jump into some of the more interesting optional projects that I would have had to miss otherwise, and without even having to pay for anything!
-            Also, even though there was some software my laptop can run, it only has 57GB of memory altogether and most of that is taken up by the system so I definitely still needed another system that could do something like have more than one software installed at a time.
-            I've also downloaded a WSL on my work laptop so don't use either VM at the moment, but still have them as you're only charged for time they're in use so I may as well keep them ready for if I do need them again for anything.
+            Also, even though there was some software my laptop can run, it only has 57GB of memory altogether and most of that is taken up by the system so I definitely still needed another system that could do something like have more than one software installed at a time and ended up running a Windows VM as well as the Linux one.
+            I've now downloaded a WSL on my work laptop so don't use either VM at the moment, but still have them as you're only charged for time they're in use so I may as well keep them ready for if I do need them again for anything.
         </p>
     </div>
 </div>

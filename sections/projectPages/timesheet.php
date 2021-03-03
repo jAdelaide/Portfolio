@@ -14,7 +14,7 @@
 Timesheet</button>
 
 <div id="timesheet" style="display: none">
-    <h4 style="text-align: left; color: rgba(114, 204, 122, 0.85); margin-left: 50px; font-family: candara; font-weight: bold">
+    <h4 style="text-align: left; color: rgba(114, 224, 122, 0.85); margin-left: 50px; font-family: candara; font-weight: bold">
     Employee Timesheet</h4>
 
     <div style="margin-left: 10px; margin-right: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; background-color: rgba(167, 182, 152, 0.08); border-radius: 30px; color: rgb(210, 190, 170)">
