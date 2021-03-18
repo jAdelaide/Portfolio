@@ -5,4 +5,5 @@
 <hr align="left" width="1000px" color=" rgb(0, 0, 0,)">
 
 
+<?php include 'projectPages/azureVM.php'; ?>
 <?php include 'projectPages/timesheet.php'; ?> 

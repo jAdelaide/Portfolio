@@ -18,7 +18,7 @@
         color: rgb(143, 254, 9) !important;
     }
     .brand-text{
-        color: rgb(192, 101, 27) !important;
+        
     }
     /* Giving the form some styling */
     form{
@@ -30,16 +30,18 @@
 
 </head>
 
+<a name="top"></a>
+
 <?php $uName = $_COOKIE['uName'] ?? 'guest'; ?>
 
-<body class="grey darken-4" style="color: rgb(250, 250, 250)">
+<body class="grey darken-4" style="background-image: url('https://raw.githubusercontent.com/jAdelaide/Portfolio/main/assets/backgroundDesign.png'); background-size: 30%">
     <nav class="grey">
         <div class="container">
-            <a href="/portfolio" style="font-family: 'Emblema One', cursive; color: yellow; text-shadow: 4px 4px 10px rgb(220, 80, 42); font-size: 40px" title="Home page">Jordan Adelaide</a>
+            <a href="https://jordan-adelaide.000webhostapp.com/" style="font-family: 'Emblema One', cursive; color: yellow; text-shadow: 4px 4px 10px rgb(220, 80, 42); font-size: 40px" title="Home page">Jordan Adelaide</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
                 <li style="font-weight: 500">Hello <?php echo htmlspecialchars($uName); ?></li>
                 <li><a href="form.php" class="btn brand" alt="Button for form" title="See my example form">Form</a></li>
-                <li><a href="https://jadelaide.github.io/-JaBlog-/" class="btn brand" target="_blank" alt="Button for blog" title="Open blog in new tab">¡JaBlog!</a></li>
+                <li><a href="https://jadelaide.github.io/JaBlog/" class="btn brand" target="_blank" alt="Button for blog" title="Open blog in new tab">¡JaBlog!</a></li>
             </ul>
         </div>
     </nav>
