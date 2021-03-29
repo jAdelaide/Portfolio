@@ -10,6 +10,5 @@ $languages = [
     ['name' => 'Google Apps Script', 'website' => 'https://developers.google.com/apps-script', 'logo' => 'https://iconape.com/wp-content/files/np/64149/svg/google-apps-script.svg'],
     ['name' => 'Visual Basic for Applications', 'website' => 'https://docs.microsoft.com/en-us/dotnet/visual-basic/', 'logo' => 'assets/vbaLogo.png'],
 ];
-];
 
 ?>

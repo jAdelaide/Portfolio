@@ -1,5 +1,5 @@
 <?php require('templates/header.php'); ?>
-<?php require('languagesArray.php'); ?>
+<?php include 'languagesArray.php'; ?>
 
 
 <ul id="nav-mobile" class="right">
@@ -10,8 +10,8 @@
 
 <?php include 'sections/about_me.php'; ?>
 <?php include 'sections/languages.php'; ?>
+<?php include 'sections/projects.php'; ?>
 <?php include 'sections/education.php'; ?>
-<!-- <?php include 'sections/blogs.php'; ?> -->
 
 <?php require('templates/footer.php'); ?>
 </html>
