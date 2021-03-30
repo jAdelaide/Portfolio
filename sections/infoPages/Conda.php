@@ -1,1 +1,0 @@
-Conda is a package, dependency and environment manager that can be used with any language.
