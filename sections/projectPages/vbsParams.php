@@ -14,32 +14,31 @@
 Data Science</button>
 
 <div id="vbsParams" style="display: none">
-    <h4 style="text-align: left; color: rgba(219, 157, 113, 0.955); margin-left: 50px; font-family: candara; font-weight: bold">
-    VBScripting</h4>
+    <h4 style="text-align: left; color: rgba(219, 143, 89, 0.955); margin-left: 50px; font-family: candara; font-weight: bold">
+    Read and Replace Data</h4>
 
-    <div style="margin-left: 10px; margin-right: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; background-color: rgba(195, 152, 218, 0.04); border-radius: 30px; color: rgb(210, 190, 170)">
-        <div class="row">
-            <div class="column" style="width: 60%">
-                <p style="font-size: 18px; font-family: candara; color: rgba(192, 202, 228, 0.85)">
-                    I'm currently saving up to buy a good laptop but the one I'm currently working on is a £250 cloudbook so, as you can imagine, it does not have much processing power and can't handle much more than the standard functionality of a laptop. 
-                    As I've recently been hired as a remote project engineer, I quickly hit that wall while attempting to set up the requirements for a machine learning project (wishful thinking, I know). 
-                    Though I'm a Windows user, I learnt to code on an Ubuntu WSL and had also learnt about cloud computing on that same course, so decided to put my training to use and used <a href="https://vbsParams.microsoft.com/en-gb/" target="_blank" title="Microsoft vbsParams: Cloud Computing Services" alt="Link to Microsoft vbsParams's website">Microsoft vbsParams</a> to create a cloud based Linux virtual machine.
-                    I chose vbsParams simply because I saw a step by step of how to set a  up with VSCode with them and it looked pretty straightforwards.
-                    I'd only used AWS before so it took a small adjustment period and to understand the different terms for things, different arrangements etc and I did end up saving all the files externally and making a new  some time after getting it running to use better specs, 
-                    but overall I found vbsParams very straightforward to navigate and understand and to be able to see what needed to be upgraded to achieve what you want to do.
-                </p>
-            </div>
-        
-            <div class="column" style="width: 40%;">
-                <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/main/assets/Linux%20screenshot.png" alt="Screenshot of the virtual machine" title="Linux virtual machine" height="auto" width="95%" style="margin-left: 6%; margin-top: 40px">
-                <br><br>
-            </div>
-        </div>
-        
-        <p style="font-size: 18px; font-family: candara; color: rgba(192, 202, 228, 0.85)">
-            I did eventually end up getting a laptop from work as we started to use software that required a dedicated graphics card, but due to the credit you get when you join vbsParams I was able to jump into some of the more interesting optional projects that I would have had to miss otherwise, and without even having to pay for anything!
-            Also, even though there was some software my laptop can run, it only has 57GB of memory altogether and most of that is taken up by the system so I definitely still needed another system that could do something like have more than one software installed at a time and ended up running a Windows  as well as the Linux one.
-            I've now downloaded a WSL on my work laptop so don't use either  at the moment, but still have them as you're only charged for time they're in use so I may as well keep them ready for if I do need them again for anything.
+    <div style="margin-left: 10px; margin-right: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; background-color: rgba(218, 178, 152, 0.04); border-radius: 30px">
+        <p style="font-size: 18px; font-family: candara; color: rgba(229, 221, 194, 0.85)">
+            This project came about as a way to use an array in a JavaScript file to provide the weighted parameters for a machine learning program.
+            The machine learning program would need to run using the weights provided in the array, then update each row of parameters in the array with new values between each run using this script.
+            <br>
+            <br>
+            Click to see my <a href="../../assets/VBS/replaceParameters.vbs" target="_blank" title="See VBS script in a new tab" alt="See VBS script for replacing array parameters">VBS script</a> and the <a href="../../assets/VBS/testSomething1.js" target="_blank" title="See mock JavaScript in a new tab" alt="See the mock JavaScript">mock JavaScript</a> that it would go through to replace all the lines of the myPineappleParams array.
+            <br>
+            Alternatively you can use these links to download a copy of the files and test the script yourself: <a href="../../assets/VBS/replaceParameters.vbs" download title="Download the VBS script" alt="Download the VBS script for replacing array parameters">VBS</a> and <a href="../../assets/VBS/testSomething1.js" download title="Download JavaScript file" alt="Download the mock JavaScript">JavaScript</a>.
+            <br>
+            Note that if run via the Windows Based Script Host there will be several blank notification boxes as I wrote it to print blank lines when run with powershell using cscript.
+            <br>
+            <br>
+            I have written a lot of comments explaining what is happening throughout the VBS script so it shouldn't be too hard to follow, even if you don't really understand the code.
+            In this case when used on its own and not by the machine learning program, it just scans through the current directory to locate and JavaScript files with "test" in the name.
+            It then scans through them to find the array that we want to update the values of, which is the "myPineappleParams" array in the testSomething1.js file (the machine learning program would usually produce hundreds of x & y values, but I have used an array of just 10 values to test the script).
+            Upon finding the pineapple parameters array, the script goes through each line and replaces the x & y values in the array with the corresponding value from the x & y array that would have come from the machine learning program - i.e. the first row of pineapple parameters would get the first value from each of the x & y arrays, the second row of parameters would get the second x & y values etc - and the rest of the file is left untouched.
+            The script updates the JS file and just outputs the name of each file it edits and how many parameters there were in it to replace.
+            <br>
+            <br>
+            If you downloaded the files to test, try duplicating the test file to see the VBS script run through multiple files.
+            If you edit the name of the pineapple parameters array in a test file then you will get an error notice that the script hasn't found the array in a file that matches the naming convention of files that should have the array, the script then will move on to checking the next file in the folder.
         </p>
     </div>
 </div>
