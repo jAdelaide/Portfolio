@@ -7,3 +7,4 @@
 
 <?php include 'projectPages/azureVM.php'; ?>
 <?php include 'projectPages/timesheet.php'; ?> 
+<?php include 'projectPages/vbsParams.php'; ?> 

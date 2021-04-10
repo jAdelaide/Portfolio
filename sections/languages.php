@@ -28,7 +28,7 @@
           if(file_exists($infoPage)): ?>
           <div class="card-action center">
             <div align="right" style="margin-right: 0px; padding-right: 0px">
-              <div class="infoTrigger" style="color: rgb(224, 160, 0); font-size: 12p; font-weight: 500">Info
+              <div class="infoTrigger" style="color: rgb(224, 160, 0); font-size: 12px; font-weight: 500">Info
                 <span class="infoText"><?php include 'infoPages/' . $language['name'] . '.php';?></span>
               </div>
             </div>
