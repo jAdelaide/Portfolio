@@ -20,19 +20,19 @@ Data Science</button>
     <div style="margin-left: 10px; margin-right: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; background-color: rgba(218, 178, 152, 0.04); border-radius: 30px">
         <p style="font-size: 18px; font-family: candara; color: rgba(229, 221, 194, 0.85)">
             This project came about as a way to use an array in a JavaScript file to provide the weighted parameters for a machine learning program.
-            The machine learning program would need to run using the weights provided in the array, then update each row of parameters in the array with new values between each run using this script.
+            The machine learning program would need to run using the weights provided in the array, then update each row of parameters in the array with the new weights that it had calculated after each run by using this VBS script.
             <br>
             <br>
-            Click to see my <a href="../../assets/VBS/replaceParameters.vbs" target="_blank" title="See VBS script in a new tab" alt="See VBS script for replacing array parameters">VBS script</a> and the <a href="../../assets/VBS/testSomething1.js" target="_blank" title="See mock JavaScript in a new tab" alt="See the mock JavaScript">mock JavaScript</a> that it would go through to replace all the lines of the myPineappleParams array.
+            Click to see my <a href="../../assets/VBS/replaceParameters.vbs" target="_blank" title="See VBS script in a new tab">VBS script</a> and the <a href="../../assets/VBS/test_Something1.js" target="_blank" title="See mock JavaScript in a new tab">mock JavaScript file</a> that it would go through to replace all the lines of the myPineappleParams array.
             <br>
-            Alternatively you can use these links to download a copy of the files and test the script yourself: <a href="../../assets/VBS/replaceParameters.vbs" download title="Download the VBS script" alt="Download the VBS script for replacing array parameters">VBS</a> and <a href="../../assets/VBS/testSomething1.js" download title="Download JavaScript file" alt="Download the mock JavaScript">JavaScript</a>.
+            Alternatively you can use these links to download a copy of the files and test the script yourself: <a href="../../assets/VBS/replaceParameters.vbs" download title="Download the VBS script">VBS</a> and <a href="../../assets/VBS/test_Something1.js" download title="Download JavaScript file">JavaScript</a>.
             <br>
             Note that if run via the Windows Based Script Host there will be several blank notification boxes as I wrote it to print blank lines when run with powershell using cscript.
             <br>
             <br>
-            I have written a lot of comments explaining what is happening throughout the VBS script so it shouldn't be too hard to follow, even if you don't really understand the code.
-            In this case when used on its own and not by the machine learning program, it just scans through the current directory to locate and JavaScript files with "test" in the name.
-            It then scans through them to find the array that we want to update the values of, which is the "myPineappleParams" array in the testSomething1.js file (the machine learning program would usually produce hundreds of x & y values, but I have used an array of just 10 values to test the script).
+            I have written a lot of comments explaining what is happening throughout the VBS script so it shouldn't be too hard to follow, even if you don't really understand the code itself.
+            In this case when used on its own and not by the machine learning program, it just scans through the current directory to locate any JavaScript files with "test_" in the name.
+            It then scans through them to find the array that we want to update the values of, which is the "myPineappleParams" array in the test_Something1.js file (the machine learning program would usually produce hundreds of x & y values, but I have used an array of just 10 values to test the script).
             Upon finding the pineapple parameters array, the script goes through each line and replaces the x & y values in the array with the corresponding value from the x & y array that would have come from the machine learning program - i.e. the first row of pineapple parameters would get the first value from each of the x & y arrays, the second row of parameters would get the second x & y values etc - and the rest of the file is left untouched.
             The script updates the JS file and just outputs the name of each file it edits and how many parameters there were in it to replace.
             <br>

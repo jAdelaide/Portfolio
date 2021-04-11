@@ -18,11 +18,6 @@ Set myOrig = fso.GetFolder(myBaseDir)
 x = Split("a,b,c,d,e,f,g,h,i,j",",")      'for testing purposes
 y = Split("1,2,3,4,5,6,7,8,9,10",",")        'these arrays are not used if arrays are provided via machine learning
 
-xString = CStr(Join(x,","))      'x and y are vectors produced by the ML software
-yString = CStr(Join(y,","))
-xArray = Split(xString,",")      'the vectors need to be reformatted into arrays for the script to cycle through the values
-yArray = Split(yString,",")
-
 variableParameters = ""     'updated in Do Until loop as it needs to be updated as the script goes through the x and y arrays
 
 For Each file In myOrig.Files
