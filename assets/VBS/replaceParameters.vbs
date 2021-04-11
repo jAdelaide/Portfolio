@@ -15,8 +15,8 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 Set myOrig = fso.GetFolder(myBaseDir)
 
 'initialise variables
-x = Split("a,b,c,d,e,f,g,h,i,j",",")      'for testing purposes
-y = Split("1,2,3,4,5,6,7,8,9,10",",")        'these arrays are not used if arrays are provided via machine learning
+xArray = Split("a,b,c,d,e,f,g,h,i,j",",")      'for testing purposes
+yArray = Split("1,2,3,4,5,6,7,8,9,10",",")        'these arrays are not used if arrays are provided via machine learning
 
 variableParameters = ""     'updated in Do Until loop as it needs to be updated as the script goes through the x and y arrays
 
