@@ -18,7 +18,7 @@ Data Science</button>
     Read and Replace Data</h4>
 
     <div style="margin-left: 10px; margin-right: 10px; padding-left: 30px; padding-right: 30px; padding-top: 10px; padding-bottom: 10px; background-color: rgba(218, 178, 152, 0.04); border-radius: 30px">
-        <p style="font-size: 18px; font-family: candara; color: rgba(229, 221, 194, 0.85)">
+        <p style="font-size: 18px; font-family: candara; color: rgba(233, 218, 173, 0.85)">
             This project came about as a way to use an array in a JavaScript file to provide the weighted parameters for a machine learning program.
             The machine learning program would need to run using the weights provided in the array, then update each row of parameters in the array with the new weights that it had calculated after each run by using this VBS script.
             <br>
