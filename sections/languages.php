@@ -10,7 +10,7 @@
     <?php foreach($languages as $language): ?>
 
       <div class="col">
-        <div class="card" style="margin: .5rem 0 0 0">
+        <div class="card" style="margin: .5rem 0 0 0; box-shadow: 0px 0px 10px 3px rgb(154, 194, 226)">
           <div class="card-content center">
             <a href="<?php echo $language['website']; ?>" target="_blank">
               <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name'] . ' - Open in new tab'; ?>" height="60" width="auto">
@@ -19,14 +19,14 @@
             
           <?php $projectPage = "sections/projectPages/" . $language['name'] . ".php";
           if(file_exists($projectPage)): ?>
-          <div class="card-action center">
+          <div class="card-action center" style="border: 0px">
               <a href="projects.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-size: 12px; font-weight: 500">My work</a>
           </div>
           <?php endif; ?>
 
           <?php $infoPage = "sections/infoPages/" . $language['name'] . ".php";
           if(file_exists($infoPage)): ?>
-          <div class="card-action center">
+          <div class="card-action center" style="border: 0px">
             <div align="right" style="margin-right: 0px; padding-right: 0px">
               <div class="infoTrigger" style="color: rgb(224, 160, 0); font-size: 12px; font-weight: 500">Info
                 <span class="infoText"><?php include 'infoPages/' . $language['name'] . '.php';?></span>
@@ -49,7 +49,7 @@
     <?php foreach($technologies as $language): ?>
 
       <div class="col">
-        <div class="card" style="margin: .5rem 0 0 0; background-color: rgba(223, 176, 245, 0.1); border: 1px solid rgba(203, 154, 226, 0.2)">
+        <div class="card" style="margin: .5rem 0 0 0; background-color: rgba(223, 176, 245, 0.1); border: 1px solid rgba(203, 154, 226, 0.2); box-shadow: 0px 0px 10px 3px rgb(223, 176, 245)">
           <div class="card-content center">
             <a href="<?php echo $language['website']; ?>" target="_blank">
               <img src="<?php echo $language['logo']; ?>" alt="Logo" title="<?php echo $language['name'] . ' - Open in new tab'; ?>" height="60" width="auto">
@@ -58,14 +58,14 @@
             
           <?php $projectPage = "sections/projectPages/" . $language['name'] . ".php";
           if(file_exists($projectPage)): ?>
-          <div class="card-action center" style="border: 2px solid rgba(191, 154, 226, 0.6)">
+          <div class="card-action center" style="border: 0px">
               <a href="projects.php?id=<?php echo $language['name'] ?>" style="color: rgb(224, 160, 0); font-size: 12px; font-weight: 500">My work</a>
           </div>
           <?php endif; ?>
 
           <?php $infoPage = "sections/infoPages/" . $language['name'] . ".php";
           if(file_exists($infoPage)): ?>
-          <div class="card-action center" style="border: 2px solid rgba(191, 154, 226, 0.6)">
+          <div class="card-action center" style="border: 0px">
             <div align="right" style="margin-right: 0px; padding-right: 0px">
               <div class="infoTrigger" style="color: rgb(224, 160, 0); font-size: 12px; font-weight: 500">Info
                 <span class="infoText"><?php include 'infoPages/' . $language['name'] . '.php';?></span>
