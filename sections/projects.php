@@ -5,6 +5,7 @@
 <hr align="left" width="1000px" color=" rgb(0, 0, 0,)">
 
 
+<?php include 'projectPages/FSx.php'; ?>
 <?php include 'projectPages/azureVM.php'; ?>
 <?php include 'projectPages/timesheet.php'; ?> 
 <?php include 'projectPages/vbsParams.php'; ?> 
