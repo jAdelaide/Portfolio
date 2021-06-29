@@ -36,8 +36,7 @@ AWS FSx</button>
             <br>
             <br>
             Below are some screenshots I took while mapping an EC2 instance to my FSx drive:
-            <br>
         </p>
+        <?php include 'FSxGallery.html'; ?>
     </div>
-    <?php include 'FSxGallery.php'; ?>
 </div>
