@@ -34,7 +34,7 @@
 
 <?php $uName = $_COOKIE['uName'] ?? 'guest'; ?>
 
-<body class="grey darken-4" style="background-image: url('https://raw.githubusercontent.com/jAdelaide/Portfolio/main/assets/backgroundDesign.png'); background-size: 30%">
+<body class="grey darken-4">
     <nav class="grey">
         <div class="container">
             <a href="https://jordan-adelaide.000webhostapp.com/" style="font-family: 'Emblema One', cursive; color: yellow; text-shadow: 4px 4px 10px rgb(220, 80, 42); font-size: 40px" title="Home page">Jordan Adelaide</a>

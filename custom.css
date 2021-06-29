@@ -1,57 +1,97 @@
 .expandLeft:hover {
-    position: relative;
-    top: -190px;
-    left: -230px;
-    width: 500px;
-    z-index: 1;
+  position: relative;
+  top: -190px;
+  left: -230px;
+  width: 500px;
+  z-index: 1;
 }
 .expandCenter:hover {
-    position: relative;
-    top: -190px;
-    left: -100px;
-    width: 500px;
-    z-index: 1;
+  position: relative;
+  top: -190px;
+  left: -100px;
+  width: 500px;
+  z-index: 1;
 }
 .expandRight:hover {
-    position: relative;
-    top: -190px;
-    left: 0px;
-    width: 500px;
-    z-index: 1;
+  position: relative;
+  top: -190px;
+  left: 0px;
+  width: 500px;
+  z-index: 1;
 }
 .column {
-    float: left;
-    width: 20%;
-    padding: 0px;
+  float: left;
+  width: 20%;
+  padding: 0px;
 }
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 .infoTrigger {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted rgb(224, 160, 0);        /* for dots under text */
-    cursor: help;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgb(224, 160, 0);        /* for dots under text */
+  cursor: help;
 }
 .infoText {
-    visibility: hidden;
-    width: 300px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    padding: 5px 3px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 100;
-    top: 100%;
-    left: 50%;
-    margin-left: -200px;
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  padding: 5px 3px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 50%;
+  margin-left: -200px;
 }
 .infoTrigger:hover .infoText{
-    visibility: visible;
+  visibility: visible;
+}
+.FSxButton {
+  color: rgba(53, 29, 15, 0.87); 
+  background-color: rgba(255, 153, 0, 0.8);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition-duration: 1s
+}
+.FSxButton:hover {
+  color: rgba(90, 29, 10, 0.87); 
+  background-color: rgb(214, 165, 36);
+}
+.FSxButton:focus {
+  color: rgba(90, 29, 10, 0.87); 
+  background-color: rgb(214, 165, 36);
+}
+.azureButton {
+  color: rgb(34, 37, 88); 
+  background-color: rgba(0, 127, 255, 0.8);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition-duration: 1s
+}
+.azureButton:hover {
+  color: rgb(13, 51, 56); 
+  background-color: rgb(45, 189, 189);
+}
+.azureButton:focus {
+  color: rgb(13, 51, 56); 
+  background-color: rgb(45, 189, 189);
 }
 .timesheetButton {
   color: rgb(2, 61, 34); 
@@ -73,23 +113,24 @@
   color: rgb(40, 61, 2); 
   background-color: rgba(119, 235, 10, 0.85);
 }
-.azureButton {
-    color: rgb(53, 21, 77); 
-    background-color: rgba(157, 60, 221, 0.88);
-    border: none;
-    border-radius: 10px;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 20px;
-    cursor: pointer;
-    transition-duration: 1s
-  }
-  .azureButton:hover {
-    color: rgb(55, 13, 56); 
-    background-color: rgb(184, 45, 189);
-  }
-  .azureButton:focus {
-    color: rgb(55, 13, 56); 
-    background-color: rgb(184, 45, 189);
-  }
+.vbsParamsButton {
+  color: rgb(53, 21, 77); 
+  background-color: rgba(157, 60, 221, 0.88);
+  color: rgba(212, 192, 228, 0.85);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition-duration: 1s
+}
+.vbsParamsButton:hover {
+  color: rgb(55, 13, 56); 
+  background-color: rgb(206, 58, 198);
+}
+.vbsParamsButton:focus {
+  color: rgb(55, 13, 56); 
+  background-color: rgb(184, 45, 189);
+}

@@ -1,5 +1,8 @@
 <br>
 <br>
+<div class="center">
+    <a href="#top" style="color: MediumPurple">Top of page</a>
+</div>
 <br>
     <footer class="section">
         <hr align="center" width="20%" color="rgb(150, 87, 32)">

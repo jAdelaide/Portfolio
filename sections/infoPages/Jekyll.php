@@ -1,0 +1,1 @@
+Jekyll is a Static Site Generator that is very similar to WordPress.

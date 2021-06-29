@@ -8,6 +8,18 @@ $languages = [
     ['name' => 'CSS', 'website' => 'https://sass-lang.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png'],
     ['name' => 'JavaScript', 'website' => 'https://www.javascript.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/7/73/Javascript-736400_960_720.png'],
     ['name' => 'Google Apps Script', 'website' => 'https://developers.google.com/apps-script', 'logo' => 'https://iconape.com/wp-content/files/np/64149/svg/google-apps-script.svg'],
+    ['name' => 'Visual Basic for Applications', 'website' => 'https://docs.microsoft.com/en-us/dotnet/visual-basic/', 'logo' => 'assets/vbaLogo.png'],
+];
+
+$technologies = [
+    ['name' => 'Amazon Web Services', 'website' => 'https://aws.amazon.com/', 'logo' => 'assets/awsLogo.png'],
+    ['name' => 'Microsoft Azure', 'website' => 'https://azure.microsoft.com/en-gb/', 'logo' => 'assets/azureLogo.png'],
+    ['name' => 'Jekyll', 'website' => 'https://jekyllrb.com/', 'logo' => 'assets/jekyllLogo.png'],
+    ['name' => 'PyTorch', 'website' => 'https://pytorch.org/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/496px-PyTorch_logo_icon.svg.png'],
+    ['name' => 'Conda', 'website' => 'https://docs.conda.io/en/latest/', 'logo' => 'assets/condaLogo.png'],
+    ['name' => 'TensorFlow', 'website' => 'https://www.tensorflow.org/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/348px-TensorFlowLogo.svg.png'],
+    ['name' => 'Jupyter', 'website' => 'https://jupyter.org/', 'logo' => 'assets/jupyterLogo.png'],
+    ['name' => '.NET', 'website' => 'https://dotnet.microsoft.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/.NET_Logo.svg/456px-.NET_Logo.svg.png'],
 ];
 
 ?>
