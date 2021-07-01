@@ -56,7 +56,8 @@
 .FSxButton {
   color: rgba(53, 29, 15, 0.87); 
   background-color: rgba(255, 153, 0, 0.8);
-  border: none;
+  box-shadow: 0px 0px 2px 2px rgba(190, 170, 147, 0.6), 0px 0px 5px 5px rgba(216, 159, 84, 0.6), 0px 0px 10px 10px rgba(121, 90, 31, 0.8);
+  border: .5px rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   padding: 15px 32px;
   text-align: center;
@@ -65,17 +66,16 @@
   cursor: pointer;
   transition-duration: 1s
 }
-.FSxButton:hover {
-  color: rgba(90, 29, 10, 0.87); 
-  background-color: rgb(214, 165, 36);
-}
+.FSxButton:hover,
 .FSxButton:focus {
   color: rgba(90, 29, 10, 0.87); 
-  background-color: rgb(214, 165, 36);
+  background-color: rgb(228, 170, 11);
+  box-shadow: 0px 0px 2px 2px rgba(190, 170, 147, 0.6), 0px 0px 5px 5px rgba(216, 159, 84, 0.6), 0px 0px 12px 12px rgba(121, 90, 31, 0.8);
 }
 .azureButton {
   color: rgb(34, 37, 88); 
   background-color: rgba(0, 127, 255, 0.8);
+  box-shadow: 0px 0px 2px 2px rgba(147, 155, 190, 0.6), 0px 0px 5px 5px rgba(108, 135, 255, 0.6), 0px 0px 10px 10px rgba(31, 48, 121, 0.8);
   border: none;
   border-radius: 10px;
   padding: 15px 32px;
@@ -85,17 +85,16 @@
   cursor: pointer;
   transition-duration: 1s
 }
-.azureButton:hover {
-  color: rgb(13, 51, 56); 
-  background-color: rgb(45, 189, 189);
-}
+.azureButton:hover,
 .azureButton:focus {
   color: rgb(13, 51, 56); 
   background-color: rgb(45, 189, 189);
+  box-shadow: 0px 0px 2px 2px rgba(147, 155, 190, 0.6), 0px 0px 5px 5px rgba(108, 135, 255, 0.6), 0px 0px 12px 12px rgba(31, 48, 121, 0.8);
 }
 .timesheetButton {
   color: rgb(2, 61, 34); 
   background-color: rgb(14, 184, 42);
+  box-shadow: 0px 0px 2px 2px rgba(147, 190, 151, 0.6), 0px 0px 5px 5px rgba(108, 255, 128, 0.6), 0px 0px 10px 10px rgba(31, 121, 46, 0.8);
   border: none;
   border-radius: 10px;
   padding: 15px 32px;
@@ -105,18 +104,16 @@
   cursor: pointer;
   transition-duration: 1s
 }
-.timesheetButton:hover {
-  color: rgb(40, 61, 2); 
-  background-color: rgba(119, 235, 10, 0.85);
-}
+.timesheetButton:hover,
 .timesheetButton:focus {
   color: rgb(40, 61, 2); 
   background-color: rgba(119, 235, 10, 0.85);
+  box-shadow: 0px 0px 2px 2px rgba(147, 190, 151, 0.6), 0px 0px 5px 5px rgba(108, 255, 128, 0.6), 0px 0px 12px 12px rgba(31, 121, 46, 0.8);
 }
 .vbsParamsButton {
   color: rgb(53, 21, 77); 
   background-color: rgba(157, 60, 221, 0.88);
-  box-shadow: 3px 3px 4px 4px rgba(53, 21, 77, 0.6), 6px 6px 8px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 2px 2px rgba(172, 147, 190, 0.6), 0px 0px 5px 5px rgba(191, 108, 255, 0.6), 0px 0px 10px 10px rgba(82, 31, 121, 0.8);
   border: none;
   border-radius: 10px;
   padding: 15px 32px;
@@ -126,11 +123,9 @@
   cursor: pointer;
   transition-duration: 1s
 }
-.vbsParamsButton:hover {
-  color: rgb(55, 13, 56); 
-  background-color: rgb(206, 58, 198);
-}
+.vbsParamsButton:hover,
 .vbsParamsButton:focus {
   color: rgb(55, 13, 56); 
-  background-color: rgb(184, 45, 189);
+  background-color: rgb(221, 62, 213);
+  box-shadow: 0px 0px 2px 2px rgba(172, 147, 190, 0.6), 0px 0px 5px 5px rgba(191, 108, 255, 0.6), 0px 0px 12px 12px rgba(82, 31, 121, 0.8);
 }
