@@ -42,4 +42,5 @@ Azure VM</button>
             I've now downloaded a WSL on my work laptop so don't use either VM at the moment, but still have them as you're only charged for time they're in use so I may as well keep them ready for if I do need them again for anything.
         </p>
     </div>
+    <br>
 </div>

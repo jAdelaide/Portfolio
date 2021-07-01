@@ -41,4 +41,5 @@ Data Science</button>
             If you edit the name of the pineapple parameters array in a test file then you will get an error notice that the script hasn't found the array in a file that matches the naming convention of files that should have the array, the script then will move on to checking the next file in the folder.
         </p>
     </div>
+    <br>
 </div>
