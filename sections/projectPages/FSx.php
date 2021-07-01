@@ -39,4 +39,5 @@ AWS FSx</button>
         </p>
         <?php include 'FSxGallery.html'; ?>
     </div>
+    <br>
 </div>

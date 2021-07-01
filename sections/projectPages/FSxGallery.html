@@ -1,249 +1,183 @@
 <!-- This is a lightbox (modal gallery) of the 4 images to demonstrate the FSx drive I set up -->
-<style>     /* This is all the CSS involved */
-  * {
-    /* box-sizing: border-box; */
-    box-sizing: border-box;
+<style>
+  .grid-Lightbox {
+      display: grid;
+      grid-template-columns: repeat(4, 300px);
+      justify-content: left;
+      padding-left: 20px;
+      align-content: center;
+      grid-gap: 10px;
+      width: 100vw;
   }
-  
-  .row-Modal > .column-Modal {
-    padding: 0 4px;
+  .grid-Lightbox img {
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      border: .3px solid rgba(255, 153, 0, 0.5);
+      box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.6);
+      margin: 0;
+      cursor: pointer;
   }
-  
-  .row-Modal:after {
-    content: "";
-    display: table;
-    clear: both;
+  #lightbox {
+      position: fixed;
+      z-index: 100;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(48, 36, 16, 0.7);
+      backdrop-filter: blur(3px) sepia(2);
+      display: none;
   }
-  
-  .column-Modal {
-    float: left;
-    width: 25%;
+  #lightbox.active {
+      display: flex;
+      justify-content:  center;
+      align-items: center;
+      cursor: alias;
   }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 0px;
-    margin-top: 0px;
-    left: 0;
-    top: 0;
-    width: 95%;
-    overflow: scroll;
-    background-color: rgba(34, 27, 16, 0.9);
+  #lightbox img {
+      max-height: 90vh;
+      max-width: 90vw;
+      border-radius: 10px;
+      border: 1.5px solid rgba(255, 255, 0, 0.7);
+      box-shadow: 0 0 15px 5px rgb(255, 174, 0), 0 0 30px 25px rgb(220, 116, 2);
+      cursor: default;
   }
-  
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: rgba(235, 185, 104, 0.35);
-    margin: auto;
-    padding: 10;
-    width: 90%;
-    max-width: 1000px;
+  #prevButton,
+  #nextButton {
+      position: fixed;
+      z-index: 1000;
+      top: 50vh;
+      left: 13%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgba(51, 51, 63, 0.7);
+      color: white;
+      font-size: 16px;
+      padding: 30vh 70px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      display: none;
+      cursor: pointer;
+      transition-duration: .3s;
   }
-  
-  /* The Close Button */
-  .close-Modal {
-    color: rgb(255, 153, 0);
-    background-color: rgb(212, 103, 0);
-    position: absolute;
-    margin-top: 50px;
-    right: 25px;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+  #nextButton {
+      left: 87%;
   }
-  
-  .close-Modal:hover,
-  .close-Modal:focus {
-    color: rgb(214, 165, 36);
-    background-color: rgb(212, 103, 0);
-    text-decoration: none;
-    cursor: pointer;
+  #prevButton:hover,
+  #nextButton:hover {
+      background-color: rgba(10, 10, 20, 0.85);
+      padding: 35vh 80px;
+      transition-duration: .3s;
   }
-  
-  .mySlides-Modal {
-    display: none;
+  #prevArea,      /*    extra area for navigation    */
+  #nextArea {
+      position: fixed;
+      z-index: 900;
+      top: 50vh;
+      left: 25%;
+      width: 30vw;
+      height: 55vh;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0);
+      display: none;
+      cursor: pointer;
   }
-  
-  .cursor-Modal {
-    cursor: pointer;
+  #nextArea {
+      left: 75%;
   }
+</style>
+
+<div class="grid-Lightbox">
+  <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/1.png" title="Step 1" alt="No external drive is mapped">
+  <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/2.png" title="Step 2" alt="Mapping to my FSx drive from the EC2 instance">
+  <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/3.png" title="Step 3" alt="The external drive is now mapped">
+  <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/4.png" title="Step 4" alt="Test file saved in the FSx drive can now be accessed">
+</div>
+
+<script>
+  const lightbox = document.createElement('div')
+  lightbox.id = 'lightbox'
+  document.body.appendChild(lightbox)
+
+  const prevButton = document.createElement('div')
+  prevButton.id = 'prevButton'
+  document.body.appendChild(prevButton)
+
+  const nextButton = document.createElement('div')
+  nextButton.id = 'nextButton'
+  document.body.appendChild(nextButton)
+
+  const prevArea = document.createElement('div')
+  prevArea.id = 'prevArea'
+  document.body.appendChild(prevArea)
+
+  const nextArea = document.createElement('div')
+  nextArea.id = 'nextArea'
+  document.body.appendChild(nextArea)
+
+  const images = document.querySelectorAll('img')
+  images.forEach(image => {
+      if (image.src.includes("assets/AWS%20FSx") == true) {       //only apply lightbox to FSx images
+          image.addEventListener('click', e => {
+              lightbox.classList.add('active')
+              const img = document.createElement('img')
+              img.src = image.src
+              lightbox.appendChild(img)
+              document.getElementById('prevButton').style.display = 'flex';        //display prev and next buttons
+              document.getElementById('nextButton').style.display = 'flex';
+              document.getElementById('prevArea').style.display = 'flex';
+              document.getElementById('nextArea').style.display = 'flex';
+          })
+      }
+  })
   
-  /* Next & previous buttons */
-  .prev-Modal,
-  .next-Modal {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: 0px;
-    color: rgb(255, 153, 0);
-    background-color: rgba(77, 46, 0, 0.8);
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+  lightbox.addEventListener('click', e => {       //close the lightbox display
+      if (e.target !== e.currentTarget) return        //don't close if they click on the image
+      lightbox.classList.remove('active')
+      lightbox.removeChild(lightbox.firstChild)
+      document.getElementById('prevButton').style.display = 'none';
+      document.getElementById('nextButton').style.display = 'none';
+      document.getElementById('prevArea').style.display = 'none';
+      document.getElementById('nextArea').style.display = 'none';
+  })
+  prevButton.addEventListener('click', e => {
+      prevImage();
+  })
+  prevArea.addEventListener('click', e => {       //extra area for navigation
+      prevImage();
+  })
+  nextButton.addEventListener('click', e => {
+      nextImage();
+  })
+  nextArea.addEventListener('click', e => {
+      nextImage();
+  })
+  
+  function prevImage() {
+      var imageSource = lightbox.firstChild.src;
+      var sourceEnd = imageSource.split("FSx/")[1];
+      var imageNumber = sourceEnd.split(".")[0];
+      var newNumber = Number(imageNumber) - 1;
+      if (newNumber == 0) {
+          newNumber = 4;
+      }
+      var newEnd = String(newNumber) + "." + sourceEnd.split(".")[1];
+      var newSource = imageSource.split("FSx/")[0] + "FSx/" + newEnd;
+      lightbox.firstChild.src = newSource;
   }
-  
-  /* Position the "next button" to the right */
-  .next-Modal {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  function nextImage() {
+      var imageSource = lightbox.firstChild.src;
+      var sourceEnd = imageSource.split("FSx/")[1];
+      var imageNumber = sourceEnd.split(".")[0];
+      var newNumber = Number(imageNumber) + 1;
+      if (newNumber == 5) {
+          newNumber = 1;
+      }
+      var newEnd = String(newNumber) + "." + sourceEnd.split(".")[1];
+      var newSource = imageSource.split("FSx/")[0] + "FSx/" + newEnd;
+      lightbox.firstChild.src = newSource;
   }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev-Modal:hover,
-  .next-Modal:hover {
-    color: rgb(77, 46, 0);
-    background-color: rgb(255, 153, 0);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext-Modal {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  img {
-    margin-bottom: -4px;
-  }
-  
-  .caption-container-Modal {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .demo-Modal {
-    opacity: 0.6;
-  }
-  
-  .active-Modal,
-  .demo-Modal:hover {
-    opacity: 1;
-  }
-  
-  img.hover-shadow-Modal {
-    transition: 0.3s;
-  }
-  
-  .hover-shadow-Modal:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  </style>
-  
-  
-  <div class="row-Modal">
-    <div class="column-Modal">
-      <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/1%20-%20no%20drive.png" style="width:100%; border-radius: 3px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    </div>
-    <div class="column-Modal">
-      <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/2%20-%20mapping%20drive.png" style="width:100%; border-radius: 3px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-    </div>
-    <div class="column-Modal">
-      <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/3%20-%20drive%20mapped.png" style="width:100%; border-radius: 3px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-    </div>
-    <div class="column-Modal">
-      <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/4%20-%20test%20file%20displayed.png" style="width:100%; border-radius: 3px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-    </div>
-  </div>
-  
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-  
-      <div class="mySlides-Modal">
-        <div class="numbertext-Modal">1 / 4</div>
-        <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/1%20-%20no%20drive.png" style="height: 50%">
-      </div>
-  
-      <div class="mySlides-Modal">
-        <div class="numbertext-Modal">2 / 4</div>
-        <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/2%20-%20mapping%20drive.png" style="height: 50%">
-      </div>
-  
-      <div class="mySlides-Modal">
-        <div class="numbertext-Modal">3 / 4</div>
-        <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/3%20-%20drive%20mapped.png" style="height: 50%">
-      </div>
-      
-      <div class="mySlides-Modal">
-        <div class="numbertext-Modal">4 / 4</div>
-        <img src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/4%20-%20test%20file%20displayed.png" style="height: 50%">
-      </div>
-      
-      <a class="prev-Modal" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next-Modal" onclick="plusSlides(1)">&#10095;</a>
-  
-      <div class="caption-container-Modal">
-        <p id="caption"></p>
-      </div>
-  
-  
-      <div class="column-Modal">
-        <img class="demo cursor" src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/1%20-%20no%20drive.png" style="width:100%" onclick="currentSlide(1)" alt="No external drive is mapped">
-      </div>
-      <div class="column-Modal">
-        <img class="demo cursor" src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/2%20-%20mapping%20drive.png" style="width:100%" onclick="currentSlide(2)" alt="Mapping to my FSx drive from the EC2 instance">
-      </div>
-      <div class="column-Modal">
-        <img class="demo cursor" src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/3%20-%20drive%20mapped.png" style="width:100%" onclick="currentSlide(3)" alt="The external drive is now mapped">
-      </div>
-      <div class="column-Modal">
-        <img class="demo cursor" src="https://raw.githubusercontent.com/jAdelaide/Portfolio/shove/assets/AWS%20FSx/4%20-%20test%20file%20displayed.png" style="width:100%" onclick="currentSlide(4)" alt="Test file saved in the FSx drive can now be accessed">
-      </div>
-    </div>
-  </div>
-  
-  
-  <script>
-  function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-  
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-  
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides-Modal");
-    var dots = document.getElementsByClassName("demo-Modal");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active-Modal", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active-Modal";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
-  </script>
+</script>
