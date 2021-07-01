@@ -7,7 +7,7 @@
 <div class="box-container">
     <div style="float: left; z-index: 0; position: relative; margin-left: 30px; margin-right: 250px; margin-top: 10px; margin-bottom: 10px; padding-left: 30px; padding-right: 150px; padding-top: 3px; padding-bottom: 10px; background-color: rgba(222, 169, 202, 0.15); border-radius: 200px 1000px 1000px 200px; color: rgb(210, 190, 170); font-size: 19px; font-family: candara;">
         <p style="position: relative; z-index: 0">
-        Hey! I'm Jordan, an enthusiastic and skilled trainee developer that loves to make things.
+        Hey! I'm Jordan, an enthusiastic and skilled junior developer that loves to make things.
         My background is in mechanical engineering and design and I only started coding in 2020, but have quickly gained experience in a number of 
         areas - including enough PHP, HTML and CSS to build this portfolio website from scratch. 
         </p>
