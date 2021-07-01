@@ -116,7 +116,7 @@
 .vbsParamsButton {
   color: rgb(53, 21, 77); 
   background-color: rgba(157, 60, 221, 0.88);
-  color: rgba(212, 192, 228, 0.85);
+  box-shadow: 3px 3px 4px 4px rgba(53, 21, 77, 0.6), 6px 6px 8px 8px rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 10px;
   padding: 15px 32px;
