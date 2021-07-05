@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guac-a-mole</title>
+    <link rel="stylesheet" href="guacStyle.css">
+</head>
+<body style="background-color: rgb(68, 48, 10)">
+    <div style="width: 50vw; height: 80vh; margin: auto">
+        <div style="width: 50%; padding: auto; margin: -15px auto -70px auto">
+            <h2 style="padding-left: 20px; font-size: 250%; color: rgb(16, 150, 27)">GUAC-A-MOLE!!!</h2>
+        </div>
+        
+        <div class="moleRow" style="padding: 30px 0px 30px 0px; width: 100%">
+            <div class="moleRow" style="padding: 0px 0px 0px 40px">
+                <div style="padding-right: 10px"><h2>Time left:</h2></div>
+                <div><h2 id="time-left">--</h2></div>
+            </div>
+                
+            <div class="moleRow" style="padding-left: 20px">
+                <div style="padding-right: 10px"><h2>Your score:</h2></div>
+                <div><h2 id="moleScore">--</h2></div>
+            </div>
+            
+            <div class="moleButton">
+                <div style="margin: -12px 0 0 12px; font-family: Impact; font-weight: 100;">Play</div>
+            </div>
+        </div>
+    
+    
+        <div class="moleGrid">
+            <div class="moleHole" id="1"></div>
+            <div class="moleHole" id="2"></div>
+            <div class="moleHole" id="3"></div>
+            <div class="moleHole" id="4"></div>
+            <div class="moleHole" id="5"></div>
+            <div class="moleHole" id="6"></div>
+            <div class="moleHole" id="7"></div>
+            <div class="moleHole" id="8"></div>
+            <div class="moleHole" id="9"></div>
+            <div class="molePauseScreen">
+                <div style="width: 50%; height: 10%; margin: auto; margin-top: 40px;">
+                    <h2 id="pauseTitle">PAUSED</h2>
+                </div>
+                <div class="pauseMole"></div>
+            </div>
+        </div>
+        
+        <script src="guac-a-mole.js"></script>
+    </div>
+    </body>
+    </html>

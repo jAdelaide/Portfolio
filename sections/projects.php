@@ -9,4 +9,5 @@
     <?php include 'projectPages/azureVM.php'; ?>
     <?php include 'projectPages/timesheet.php'; ?> 
     <?php include 'projectPages/vbsParams.php'; ?> 
+    <button class="moleGameButton" onclick="window.open('../../assets/Guac-a-mole/guacAmole.html" style="padding: 17px 22px">
 </div>
