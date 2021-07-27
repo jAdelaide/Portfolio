@@ -19,7 +19,7 @@ $technologies = [
     ['name' => 'Conda', 'website' => 'https://docs.conda.io/en/latest/', 'logo' => 'assets/condaLogo.png'],
     ['name' => 'TensorFlow', 'website' => 'https://www.tensorflow.org/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/348px-TensorFlowLogo.svg.png'],
     ['name' => 'Jupyter', 'website' => 'https://jupyter.org/', 'logo' => 'assets/jupyterLogo.png'],
-    ['name' => '.NET', 'website' => 'https://dotnet.microsoft.com/', 'logo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/.NET_Logo.svg/456px-.NET_Logo.svg.png'],
+    ['name' => 'React', 'website' => 'https://reactjs.org/', 'logo' => 'assets/reactLogo.png'],
 ];
 
 ?>
