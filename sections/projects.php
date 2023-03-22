@@ -9,3 +9,5 @@
 <?php include 'projectPages/azureVM.php'; ?>
 <?php include 'projectPages/timesheet.php'; ?> 
 <?php include 'projectPages/vbsParams.php'; ?> 
+<?php include 'projectPages/guacamole.php'; ?> 
+<?php include 'projectPages/jordasaurusJump.php'; ?> 
