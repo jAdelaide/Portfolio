@@ -42,6 +42,9 @@
                 <li style="font-weight: 500">Hello <?php echo htmlspecialchars($uName); ?></li>
                 <li><a href="form.php" class="btn brand" alt="Button for form" title="See my example form">Form</a></li>
                 <li><a href="https://jadelaide.github.io/JaBlog/" class="btn brand" target="_blank" alt="Button for blog" title="Open blog in new tab">¡JaBlog!</a></li>
+                <a href="https://github.com/jAdelaide" class="btn brand" target="_blank" alt="Button for GitHub" title="Open my GitHub in new tab" style="width: 0px; height: 0.5px">
+                        <img src="../../assets/GitHub_button.png" height="70px" style="margin-left: -30px; margin-top: -35px">
+                </a>
             </ul>
         </div>
     </nav>
