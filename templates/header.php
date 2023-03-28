@@ -17,9 +17,9 @@
         background: rgb(34, 85, 119) !important;
         color: rgb(143, 254, 9) !important;
     }
-    .brand-text{
+    /* .brand-text{
         
-    }
+    } */
     /* Giving the form some styling */
     form{
         max-width: 460px;

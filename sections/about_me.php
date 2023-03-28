@@ -26,7 +26,7 @@
     <div class="column" style="width: 10%">
         <div style="position: absolute">
             <form style="margin-top: -30px; margin-left: -90%">
-                <img src="../assets/jordanBear.png" height="450px" title="That's me!!!" alt="A picture of me in a pile of giant teddy bears">
+                <img src="../assets/Jordan.png" height="500px" style="margin-top: -30px" title="That's me!!!" alt="A picture of me">
             </form>
         </div>
     </div>
